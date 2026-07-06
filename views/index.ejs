@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('meta')%>
+        <%- include('style') %>
+</head>
+
+<body class="home-2">
+    <%- include('header') %>
+
+      <main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Optical-Grade Formula</span>
+        <h1>Zero streaks.<br>Zero fog.<br><em>Every lens.</em></h1>
+        <p class="lede">CLARO is an alcohol-free, ammonia-free cleaning spray engineered for glasses, camera glass, and screens — safe on every anti-reflective coating, dry in seconds.</p>
+        <div class="hero-ctas">
+          <a href="#shop" class="btn btn-primary">Shop the Spray</a>
+          <a href="#wipe-test" class="btn btn-ghost">Try the Wipe Test ↓</a>
+        </div>
+        <div class="spec-strip">
+          <span><b>30 / 60 / 250</b> ml sizes</span>
+          <span>pH <b>7.0</b> neutral</span>
+          <span><b>AR-coating</b> safe</span>
+          <span><b>3 sec</b> dry time</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo-frame">
+          <img src="https://images.pexels.com/photos/7530721/pexels-photo-7530721.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="CLARO lens cleaning spray bottle, close up on reflective surface">
+        </div>
+        <div class="floating-badge">
+          <span class="big">10,400+</span>
+          bottles shipped to opticians &amp; photographers this year
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="trust">
+    <div class="wrap trust-grid">
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L20 6V12C20 17 16.5 20.7 12 22C7.5 20.7 4 17 4 12V6L12 2Z" stroke="var(--zing)" stroke-width="1.6"/></svg>
+        Ammonia-free
+      </div>
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 12L10 18L20 6" stroke="var(--zing)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Alcohol-free
+      </div>
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="var(--zing)" stroke-width="1.6"/><path d="M9 12L11 14L15 10" stroke="var(--zing)" stroke-width="1.6"/></svg>
+        Safe on AR coatings
+      </div>
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 12H21M12 3V21" stroke="var(--zing)" stroke-width="1.6" stroke-linecap="round"/></svg>
+        Anti-static finish
+      </div>
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12L9 16L19 6" stroke="var(--zing)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        30-day guarantee
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCT GRID -->
+  <section id="shop">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Bestselling bottles</h2>
+        <p>Every formula, every size — pick the bottle that matches how you clean.</p>
+      </div>
+      <div class="product-grid">
+
+        <div class="product-card">
+          <div class="product-media">
+            <span class="product-tag">Bestseller</span>
+            <img src="https://images.pexels.com/photos/12997255/pexels-photo-12997255.jpeg?auto=compress&cs=tinysrgb&w=600" alt="CLARO Classic 60ml lens cleaning spray bottle">
+          </div>
+          <div class="product-body">
+            <h4>CLARO Classic — 60ml</h4>
+            <span class="product-meta">SKU CLR-060 · Everyday eyewear</span>
+            <div class="product-price">
+              <span class="price">$12.00</span>
+              <button class="add-btn" onclick="addToCart()">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-media">
+            <span class="product-tag">Travel</span>
+            <img src="https://images.pexels.com/photos/6847860/pexels-photo-6847860.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hand holding CLARO travel size lens cleaner spray bottle">
+          </div>
+          <div class="product-body">
+            <h4>CLARO Travel — 30ml</h4>
+            <span class="product-meta">SKU CLR-030 · TSA-friendly</span>
+            <div class="product-price">
+              <span class="price">$8.00</span>
+              <button class="add-btn" onclick="addToCart()">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-media">
+            <span class="product-tag">Refill</span>
+            <img src="https://images.pexels.com/photos/6847823/pexels-photo-6847823.jpeg?auto=compress&cs=tinysrgb&w=600" alt="CLARO Pro 250ml refill bottle with reflection">
+          </div>
+          <div class="product-body">
+            <h4>CLARO Pro — 250ml Refill</h4>
+            <span class="product-meta">SKU CLR-250 · Studio &amp; optician use</span>
+            <div class="product-price">
+              <span class="price">$22.00</span>
+              <button class="add-btn" onclick="addToCart()">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-media">
+            <span class="product-tag">New</span>
+            <img src="https://images.pexels.com/photos/2335052/pexels-photo-2335052.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Camera lens close up, compatible with CLARO Camera and Optics formula">
+          </div>
+          <div class="product-body">
+            <h4>CLARO Camera &amp; Optics — 60ml</h4>
+            <span class="product-meta">SKU CLR-CAM · Coated glass safe</span>
+            <div class="product-price">
+              <span class="price">$14.00</span>
+              <button class="add-btn" onclick="addToCart()">+</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WIPE TEST (SIGNATURE INTERACTIVE) -->
+  <section class="wipe-section" id="wipe-test">
+    <div class="wrap wipe-grid">
+      <div class="wipe-copy">
+        <span class="eyebrow">The Wipe Test</span>
+        <h2>Drag the line. See the streak disappear.</h2>
+        <p>One pass of CLARO removes the oil and dust film that causes haze — no residue, no rainbow streaking under light.</p>
+        <ul class="wipe-steps">
+          <li><b>01</b> Left side: lens before cleaning</li>
+          <li><b>02</b> Right side: after one CLARO pass</li>
+          <li><b>03</b> Drag anywhere on the image to compare</li>
+        </ul>
+      </div>
+      <div class="wipe-tester" id="wipeTester">
+        <div class="layer smudged">
+          <img src="https://images.pexels.com/photos/13430491/pexels-photo-13430491.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Eyeglasses lens before cleaning, hazy">
+        </div>
+        <div class="layer clear" id="clearLayer">
+          <img src="https://images.pexels.com/photos/13430491/pexels-photo-13430491.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Eyeglasses lens after cleaning with CLARO, crystal clear">
+        </div>
+        <span class="wipe-label left">Smudged</span>
+        <span class="wipe-label right">Clean</span>
+        <div class="wipe-handle" id="wipeHandle">
+          <div class="grip">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M8 8L4 12L8 16M16 8L20 12L16 16" stroke="#132420" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Three steps, one clear view</h2>
+        <p>The order matters — here's the routine we test every formula against.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <span class="step-num">01 · Spritz</span>
+          <h3>Two sprays per lens</h3>
+          <p>Hold 6 inches away and mist both sides of the lens or screen evenly. A little goes further than you'd think.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">02 · Wipe</span>
+          <h3>Fold your microfiber cloth</h3>
+          <p>Use a clean, dry section of cloth and wipe in one direction, working from the frame outward.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">03 · Shine</span>
+          <h3>Air-dry in 3 seconds</h3>
+          <p>No haze, no residue ring. The formula flashes off without needing a second pass.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULA -->
+  <section class="formula" id="formula">
+    <div class="wrap formula-grid">
+      <div class="formula-copy">
+        <span class="eyebrow">What's Inside</span>
+        <h2>Plant-derived, lab-tested, coating-safe.</h2>
+        <p>CLARO replaces alcohol and ammonia with a citrus-derived surfactant base — tough enough on oil and fingerprints, gentle enough for anti-reflective and blue-light coatings.</p>
+        <table class="spec-table">
+          <tr><td>Active base</td><td>Citrus-derived surfactant</td></tr>
+          <tr><td>pH level</td><td>7.0 neutral</td></tr>
+          <tr><td>Alcohol content</td><td>0%</td></tr>
+          <tr><td>Ammonia content</td><td>0%</td></tr>
+          <tr><td>Dry time</td><td>~3 seconds</td></tr>
+          <tr><td>Coating compatibility</td><td>AR / blue-light / polarized</td></tr>
+        </table>
+      </div>
+      <div class="formula-media">
+        <img src="https://images.pexels.com/photos/6767793/pexels-photo-6767793.jpeg?auto=compress&cs=tinysrgb&w=900" alt="CLARO spray bottle formula shot with botanical accents">
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How CLARO compares</h2>
+        <p>Not every "lens cleaner" is built for coated glass. Here's the difference.</p>
+      </div>
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Formula</th>
+            <th class="claro-col">CLARO</th>
+            <th>Alcohol Spray</th>
+            <th>Ammonia Glass Cleaner</th>
+            <th>Dry Wipe Only</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Safe on AR coating</td>
+            <td class="claro-col yes">Yes</td>
+            <td class="no">No</td>
+            <td class="no">No</td>
+            <td class="yes">Yes</td>
+          </tr>
+          <tr>
+            <td>Streak-free finish</td>
+            <td class="claro-col yes">Yes</td>
+            <td>Sometimes</td>
+            <td class="no">No</td>
+            <td class="no">No</td>
+          </tr>
+          <tr>
+            <td>Anti-static residue</td>
+            <td class="claro-col yes">Yes</td>
+            <td class="no">No</td>
+            <td class="no">No</td>
+            <td class="no">No</td>
+          </tr>
+          <tr>
+            <td>Dry time</td>
+            <td class="claro-col">3 sec</td>
+            <td>5 sec</td>
+            <td>8 sec</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="reviews">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Trusted behind the counter</h2>
+        <p>From optical shops to camera bags — what people notice after the first bottle.</p>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <span class="stars">★★★★★</span>
+          <p>"We switched our entire fitting counter to CLARO. It's the only spray our lab lets us use on AR-coated demo frames."</p>
+          <div class="testi-who"><span>Priya M.</span><span>Licensed Optician</span></div>
+        </div>
+        <div class="testi-card">
+          <span class="stars">★★★★★</span>
+          <p>"Dries fast enough to use between shots on set. No streaks under studio lighting, which is the real test."</p>
+          <div class="testi-who"><span>Daniel R.</span><span>Wedding Photographer</span></div>
+        </div>
+        <div class="testi-card">
+          <span class="stars">★★★★★</span>
+          <p>"I keep the travel bottle in every bag I own. My glasses have never stayed this clean, this long."</p>
+          <div class="testi-who"><span>Wren T.</span><span>Everyday Wearer</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIBE -->
+  <section class="subscribe">
+    <div class="wrap subscribe-inner">
+      <div>
+        <h2>Never run dry again.</h2>
+        <p>Subscribe to auto-refills and save 20% on every bottle.</p>
+      </div>
+      <a href="#shop" class="btn" style="background:var(--ink);color:var(--zing);">Start a Subscription</a>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="wrap">
+      <h2>Get care tips &amp; early access</h2>
+      <p>One email a month — lens care guides, new formulas, and subscriber-only pricing.</p>
+      <form class="newsletter-form" onsubmit="return handleSubscribe(event)">
+        <input type="email" placeholder="you@email.com" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+
+
+
+        <!-- scroll-top -->
+        <a href="#" id="scroll-top"><i class="far fa-arrow-up-from-arc"></i></a>
+        <!-- scroll-top end -->
+
+
+
+
+
+
+
+
+        <%- include('footer') %>
+            <%- include('js') %>
+</body>
+
+</html>

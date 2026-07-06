@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('meta')%>
+        <%- include('style') %>
+</head>
+
+<body>
+    <%- include('header') %>
+
+       
+<main>
+
+  <!-- HERO -->
+  <section class="acc-hero">
+    <div class="wrap acc-hero-grid">
+      <div>
+        <span class="eyebrow">Care Kit</span>
+        <h1>The spray does the<br>work. <em>These protect it.</em></h1>
+        <p class="lede">A carry case, a storage box, a proper cloth, and a brush built to get into the corners a cloth can't reach — everything CLARO users end up buying anyway, just designed to match from the start.</p>
+        <div class="acc-spec-strip">
+          <span><b>4</b> accessories</span>
+          <span><b>Lint-free</b> microfiber</span>
+          <span><b>Ventilated</b> hard box</span>
+          <span><b>Water-resistant</b> case</span>
+        </div>
+      </div>
+      <div class="acc-hero-visual">
+        <img src="https://images.pexels.com/photos/9324338/pexels-photo-9324338.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Goggles case, cleaning cloth, and brush laid out on a flat surface">
+        <span class="acc-hero-badge">Full Kit — $46</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUILD YOUR KIT (SIGNATURE INTERACTIVE) -->
+  <section class="kit-section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Build your kit</h2>
+        <p>Tap to add or remove pieces — buy all four and the bundle price kicks in automatically.</p>
+      </div>
+
+      <div class="kit-grid" id="kitGrid">
+
+        <div class="kit-card selected" data-id="bag" data-name="Goggles Carry Bag" data-price="14">
+          <div class="kit-media">
+            <span class="kit-tag">Bestseller</span>
+            <span class="kit-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="var(--zing)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <img src="https://images.pexels.com/photos/6311653/pexels-photo-6311653.jpeg?auto=compress&cs=tinysrgb&w=600" alt="CLARO padded carry bag for swim and ski goggles">
+          </div>
+          <div class="kit-body">
+            <h4>Goggles Carry Bag</h4>
+            <span class="kit-meta">SKU CLR-BAG · Padded, water-resistant</span>
+            <div class="kit-price"><span class="price">$14.00</span></div>
+          </div>
+        </div>
+
+        <div class="kit-card selected" data-id="box" data-name="Goggles Storage Box" data-price="18">
+          <div class="kit-media">
+            <span class="kit-tag">New</span>
+            <span class="kit-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="var(--zing)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <img src="https://images.pexels.com/photos/4210863/pexels-photo-4210863.jpeg?auto=compress&cs=tinysrgb&w=600" alt="CLARO hard shell storage box for goggles with ventilation holes">
+          </div>
+          <div class="kit-body">
+            <h4>Goggles Storage Box</h4>
+            <span class="kit-meta">SKU CLR-BOX · Vented hard shell</span>
+            <div class="kit-price"><span class="price">$18.00</span></div>
+          </div>
+        </div>
+
+        <div class="kit-card selected" data-id="cloth" data-name="Microfiber Cloth" data-price="9">
+          <div class="kit-media">
+            <span class="kit-tag">Essential</span>
+            <span class="kit-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="var(--zing)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <img src="https://images.pexels.com/photos/6069553/pexels-photo-6069553.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Folded CLARO microfiber cleaning cloth">
+          </div>
+          <div class="kit-body">
+            <h4>Microfiber Cloth</h4>
+            <span class="kit-meta">SKU CLR-CLOTH · Lint-free, 2-pack</span>
+            <div class="kit-price"><span class="price">$9.00</span></div>
+          </div>
+        </div>
+
+        <div class="kit-card selected" data-id="brush" data-name="Precision Cleaning Brush" data-price="11">
+          <div class="kit-media">
+            <span class="kit-tag">Detail tool</span>
+            <span class="kit-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="var(--zing)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <img src="https://images.pexels.com/photos/5240544/pexels-photo-5240544.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Retractable precision cleaning brush for lens hinges and vents">
+          </div>
+          <div class="kit-body">
+            <h4>Precision Cleaning Brush</h4>
+            <span class="kit-meta">SKU CLR-BRUSH · Dual-end, retractable</span>
+            <div class="kit-price"><span class="price">$11.00</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="kit-summary">
+        <div class="kit-summary-left">
+          <span class="eyebrow">Your Kit</span>
+          <h3 id="kitCountLabel">4 items selected</h3>
+          <span class="sub" id="kitItemsList">Bag, Box, Cloth, Brush</span>
+        </div>
+        <div class="kit-summary-right">
+          <div class="kit-total">
+            <span class="full" id="kitFullPrice">$52.00</span>
+            <span class="now" id="kitNowPrice">$46.00</span>
+            <span class="kit-save" id="kitSaveLabel">Bundle of 4 — save $6</span>
+          </div>
+          <button class="btn btn-primary" id="addKitBtn" onclick="addKitToCart()">Add Kit to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAIL: BAG -->
+  <section>
+    <div class="wrap">
+      <div class="detail-row">
+        <div class="detail-media">
+          <img src="https://images.pexels.com/photos/6311653/pexels-photo-6311653.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Close up of CLARO goggles carry bag drawstring closure">
+        </div>
+        <div class="detail-copy">
+          <span class="eyebrow">Carry Bag</span>
+          <h3>Goes in the gym bag, not around your neck.</h3>
+          <p>A soft-shell pouch sized for swim and ski goggles, with a drawstring close and a water-resistant lining so a damp goggle doesn't soak through to whatever's next to it.</p>
+          <ul class="detail-specs">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="var(--green-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Water-resistant ripstop lining</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="var(--green-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Fits swim, ski, and safety goggles</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="var(--green-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Clip-on loop for a backpack or bag</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DETAIL: BOX -->
+      <div class="detail-row reverse">
+        <div class="detail-copy">
+          <span class="eyebrow">Storage Box</span>
+          <h3>A hard shell for the goggles you're not using today.</h3>
+          <p>Vented on both sides so lenses air out instead of trapping moisture, with a felt-lined interior that keeps the strap from creasing the seal.</p>
+          <ul class="detail-specs">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="var(--green-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Ventilated shell prevents trapped moisture</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="var(--green-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Felt-lined interior, no strap creasing</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="var(--green-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Stacks flat in a locker or gear bag</li>
+          </ul>
+        </div>
+        <div class="detail-media">
+          <img src="https://images.pexels.com/photos/4210863/pexels-photo-4210863.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Open CLARO goggles storage box showing felt-lined interior">
+        </div>
+      </div>
+
+      <!-- DETAIL: CLOTH + BRUSH -->
+      <div class="detail-row">
+        <div class="detail-media">
+          <img src="https://images.pexels.com/photos/6069553/pexels-photo-6069553.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Microfiber cloth and cleaning brush together">
+        </div>
+        <div class="detail-copy">
+          <span class="eyebrow">Cloth &amp; Brush</span>
+          <h3>For the corners a spray alone can't finish.</h3>
+          <p>A tightly-woven microfiber cloth pairs with a retractable, dual-end brush — soft bristles for hinges and vents, a static-safe tip for dust in seals — so nothing gets pushed around instead of off.</p>
+          <ul class="detail-specs">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="var(--green-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Lint-free weave, safe on coated lenses</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="var(--green-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Retractable brush clips onto keys or bag</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="var(--green-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Machine-washable, air-dry only</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT'S IN THE KIT -->
+  <section style="background:var(--bg-alt);">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What's in the full kit</h2>
+        <p>Every piece, sized and specced.</p>
+      </div>
+      <table class="box-table">
+        <thead>
+          <tr><th>Item</th><th>Material</th><th>Dimensions</th><th>Price</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Goggles Carry Bag</td><td>Ripstop nylon, water-resistant lining</td><td class="dim">18 × 10 × 6 cm</td><td>$14.00</td></tr>
+          <tr><td>Goggles Storage Box</td><td>Vented ABS shell, felt interior</td><td class="dim">20 × 11 × 7 cm</td><td>$18.00</td></tr>
+          <tr><td>Microfiber Cloth (2-pack)</td><td>Lint-free split microfiber</td><td class="dim">30 × 30 cm each</td><td>$9.00</td></tr>
+          <tr><td>Precision Cleaning Brush</td><td>Soft bristle + static-safe tip</td><td class="dim">11 cm retracted</td><td>$11.00</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="acc-cta">
+    <div class="wrap acc-cta-inner">
+      <div>
+        <h2>Pair it with the spray that started it all.</h2>
+        <p>The formula these accessories are built to protect.</p>
+      </div>
+      <a href="index.html#shop" class="btn" style="background:var(--ink);color:var(--zing);">Shop the Spray</a>
+    </div>
+  </section>
+
+</main>
+
+        <%- include('footer') %>
+            <%- include('js') %>
+</body>
+
+</html>

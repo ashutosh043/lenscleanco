@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('meta')%>
+        <%- include('style') %>
+</head>
+
+<body>
+    <%- include('header') %>
+
+       <main>
+
+  <!-- CONTACT HERO -->
+  <section class="contact-hero">
+    <div class="wrap">
+      <span class="eyebrow">Get In Touch</span>
+      <h1>Tell us what's<br><em>hazy.</em></h1>
+      <p class="lede">Pick the closest match below and we'll route your message to the right desk — most replies go out within one business day.</p>
+
+      <div class="route-grid" id="routeGrid">
+        <div class="route-card selected" data-topic="Order Support" data-eyebrow="Where's my order">
+          <div class="glyph">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6H21L19 15H8L6 6ZM6 6L5 3H2" stroke="var(--green-deep)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="20" r="1.4" fill="var(--green-deep)"/><circle cx="18" cy="20" r="1.4" fill="var(--green-deep)"/></svg>
+          </div>
+          <h4>Order Support</h4>
+          <span>Shipping, tracking, returns</span>
+        </div>
+        <div class="route-card" data-topic="Wholesale & Opticians" data-eyebrow="Bulk orders and accounts">
+          <div class="glyph">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 21V9L12 4L20 9V21" stroke="var(--green-deep)" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 21V14H15V21" stroke="var(--green-deep)" stroke-width="1.8"/></svg>
+          </div>
+          <h4>Wholesale &amp; Opticians</h4>
+          <span>Bulk pricing, accounts</span>
+        </div>
+        <div class="route-card" data-topic="Product Question" data-eyebrow="Formula and compatibility">
+          <div class="glyph">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="var(--green-deep)" stroke-width="1.8"/><path d="M12 16V16.01M12 8V13" stroke="var(--green-deep)" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h4>Product Question</h4>
+          <span>Coatings, ingredients, use</span>
+        </div>
+        <div class="route-card" data-topic="Press & Partnerships" data-eyebrow="Media and collaborations">
+          <div class="glyph">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4H20V16H8L4 20V4Z" stroke="var(--green-deep)" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </div>
+          <h4>Press &amp; Partnerships</h4>
+          <span>Media, collabs, wholesale</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REQUISITION FORM (SIGNATURE) -->
+  <section class="req-section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Send a Message</span>
+        <h2 style="margin-top:14px;color:#fff;">One form, routed automatically.</h2>
+        <p style="color:#9FB0A3;">Fields adjust slightly depending on what you selected above.</p>
+      </div>
+
+      <div class="req-grid">
+        <div class="req-side">
+          <div>
+            <h3>Requisition slip</h3>
+            <p>This is what lands in our inbox — plain and easy to route to the right desk.</p>
+          </div>
+          <div class="req-slip">
+            TOPIC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b id="slipTopic">Order Support</b><br>
+            PRIORITY&nbsp;&nbsp;&nbsp;<span id="slipPriority">Standard</span><br>
+            EXPECTED REPLY&nbsp;<span id="slipReply">1 business day</span>
+          </div>
+        </div>
+        <form class="req-form" onsubmit="return handleContactSubmit(event)">
+          <div class="selected-topic-tag" id="topicTag">Order Support</div>
+          <div class="field-row">
+            <div class="field">
+              <label for="fullName">Full name</label>
+              <input id="fullName" type="text" placeholder="Jordan Lee" required>
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input id="email" type="email" placeholder="you@email.com" required>
+            </div>
+          </div>
+          <div class="field" id="orderField">
+            <label for="orderNumber">Order number (optional)</label>
+            <input id="orderNumber" type="text" placeholder="CLR-10492">
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell us what's going on..." required></textarea>
+          </div>
+          <div class="form-foot">
+            <span class="hint" id="replyHint">Order support replies within 1 business day.</span>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILS -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Other ways to reach us</h2>
+        <p>No form required — pick whichever's easiest.</p>
+      </div>
+      <div class="details-grid">
+        <div class="detail-card">
+          <h4>Email</h4>
+          <p>General questions and order support</p>
+          <a class="link" href="mailto:hello@claro-optical.com">hello@claro-optical.com</a>
+        </div>
+        <div class="detail-card">
+          <h4>Studio hours</h4>
+          <p>Monday – Friday, 9:00am – 6:00pm EST</p>
+          <p>Replies go out in the order they arrive</p>
+        </div>
+        <div class="detail-card">
+          <h4>Wholesale line</h4>
+          <p>For opticians and retail partners</p>
+          <a class="link" href="mailto:wholesale@claro-optical.com">wholesale@claro-optical.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+        <script>
+
+
+            const phoneInput = document.getElementById("phone");
+
+            phoneInput.addEventListener("input", function () {
+                this.value = this.value.replace(/[^0-9]/g, "");
+            });
+
+        </script>
+
+
+        <%- include('footer') %>
+            <%- include('js') %>
+</body>
+
+</html>
