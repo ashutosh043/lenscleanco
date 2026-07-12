@@ -1,13 +1,13 @@
 
   :root{
-    --ink:#132420;
+   --ink:#011e64;
     --bg:#F5F7F1;
-    --bg-alt:#EBEFE3;
+    --bg-alt:#004eee24;
     --panel:#FFFFFF;
-    --green:#2F6B4F;
-    --green-deep:#1C4633;
-    --zing:#CFFF5C;
-    --zing-deep:#A9DB2F;
+    --green:#0072fa;
+    --green-deep:#011750;
+    --zing:#01e8ff;
+    --zing-deep:#006ffa;
     --line:#D3D9C9;
     --muted:#5C6B60;
     --radius:14px;
@@ -27,7 +27,8 @@
   .eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--zing-deep);display:inline-block;}
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border-radius:999px;font-family:var(--body);font-weight:600;font-size:15px;cursor:pointer;border:1px solid transparent;transition:transform .15s ease, background .2s ease;}
   .btn:active{transform:scale(.97);}
-  .btn-primary{background:var(--ink);color:var(--zing);}
+  .btn-primary{background:var(--ink);color:#fff;}
+
   .btn-primary:hover{background:var(--green-deep);}
   .btn-ghost{background:transparent;border-color:var(--ink);color:var(--ink);}
   .btn-ghost:hover{background:var(--ink);color:var(--zing);}
